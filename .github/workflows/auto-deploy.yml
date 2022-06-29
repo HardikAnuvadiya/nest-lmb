@@ -3,7 +3,7 @@ name: Deploy to Amazon Lambda
 on:
   push:
     branches:
-      - no-branch
+      - main
 
 jobs:
   deploy:

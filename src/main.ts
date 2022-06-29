@@ -3,7 +3,7 @@ import serverlessExpress from '@vendia/serverless-express';
 
 import { AppModule } from './modules/app/app.module';
 
-async function bootstrap(event?, context?, callback?) {
+const bootstrap = async (event?, context?, callback?) => {
   const app = await NestFactory.create(AppModule);
 
   if (require.main.filename === __filename) {
@@ -17,6 +17,6 @@ async function bootstrap(event?, context?, callback?) {
       return serverlessExpress({ app: expressApp })(event, context, callback);
     }
   }
-}
+};
 
 bootstrap();
