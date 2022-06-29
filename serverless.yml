@@ -9,7 +9,7 @@ provider:
 
 functions:
   api:
-    handler: dist/main.bootstrap
+    handler: dist/serverless.handler
     events:
       - httpApi:
           method: GET
