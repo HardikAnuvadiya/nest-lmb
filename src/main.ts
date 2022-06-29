@@ -8,7 +8,7 @@ async function bootstrap(event?, context?, callback?) {
 
   if (require.main.filename === __filename) {
     await app.listen(3000, () => {
-      console.log('Running...');
+      console.log('Running on port 3000...');
     });
   } else {
     if (event && context && callback) {
