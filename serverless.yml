@@ -1,0 +1,19 @@
+service: rate-docs
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  region: eu-west-1
+
+functions:
+  api:
+    handler: dist/main.bootstrap
+    events:
+      - httpApi:
+          method: GET
+          path: /
+      - httpApi:
+          method: GET
+          path: /add
