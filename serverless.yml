@@ -6,6 +6,8 @@ provider:
   name: aws
   runtime: nodejs16.x
   region: eu-west-1
+  httpApi:
+    id: v6n1hqh675
 
 functions:
   api:
