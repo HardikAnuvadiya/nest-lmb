@@ -19,3 +19,9 @@ functions:
       - httpApi:
           method: GET
           path: /add
+      - httpApi:
+          method: GET
+          path: /addd
+      - httpApi:
+          method: POST
+          path: /test-post
