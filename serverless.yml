@@ -25,3 +25,6 @@ functions:
       - httpApi:
           method: POST
           path: /test-post
+
+plugins:
+  - serverless-offline
